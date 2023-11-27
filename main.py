@@ -24,9 +24,6 @@ if uploaded_file is not None:
     # 進捗バーの設定
     progress_bar = st.progress(0)
 
-    progress_bar.progress(20)
-    subprocess.run(["python", "weightdown.py"])
-
     # 先生の予測入力
     doctor_prediction = st.number_input("先生が予測するLVEFを入力してください", min_value=0.0, max_value=100.0, step=0.1)
 
